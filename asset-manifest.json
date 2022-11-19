@@ -1,14 +1,30 @@
 {
   "files": {
-    "main.css": "/cs1300-development/static/css/main.073c9b0a.css",
-    "main.js": "/cs1300-development/static/js/main.28a46d68.js",
-    "static/media/logo.svg": "/cs1300-development/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/cs1300-development/static/css/main.f8fea764.css",
+    "main.js": "/cs1300-development/static/js/main.12a766ae.js",
+    "static/media/aubrey.png": "/cs1300-development/static/media/aubrey.c9c07ba421a3956810fa.png",
+    "static/media/michael.png": "/cs1300-development/static/media/michael.632e6cad5ed31e0a68c1.png",
+    "static/media/nick.png": "/cs1300-development/static/media/nick.6cf083f14ab852d5b96e.png",
+    "static/media/miku.png": "/cs1300-development/static/media/miku.a806dc79a826b9bc8c8f.png",
+    "static/media/jessie.png": "/cs1300-development/static/media/jessie.1bf6944802207808d04e.png",
+    "static/media/jenny.png": "/cs1300-development/static/media/jenny.627708a26ff636f8a57b.png",
+    "static/media/jeff.png": "/cs1300-development/static/media/jeff.b3e2b433bcd08609095d.png",
+    "static/media/isaac.png": "/cs1300-development/static/media/isaac.90fa9b3b32bd01bd0276.png",
+    "static/media/kelly.png": "/cs1300-development/static/media/kelly.e4e542b7c389ebf727c8.png",
+    "static/media/dylan.png": "/cs1300-development/static/media/dylan.2684bed105b173b98f2f.png",
+    "static/media/lauren.png": "/cs1300-development/static/media/lauren.9e81caf6e0b6506e526b.png",
+    "static/media/anika.png": "/cs1300-development/static/media/anika.37b0282d3c695c3d7d57.png",
+    "static/media/logo.png": "/cs1300-development/static/media/logo.f05dc7abb082de79ed45.png",
+    "static/media/connie.png": "/cs1300-development/static/media/connie.f84db19f226fc6270839.png",
+    "static/media/sunny.png": "/cs1300-development/static/media/sunny.8f6f460db4a3dbc89bfe.png",
+    "static/media/melissa.png": "/cs1300-development/static/media/melissa.3134d85269356734b3e1.png",
+    "static/media/tongyu.png": "/cs1300-development/static/media/tongyu.0ab8652f8e18f07d8c4e.png",
     "index.html": "/cs1300-development/index.html",
-    "main.073c9b0a.css.map": "/cs1300-development/static/css/main.073c9b0a.css.map",
-    "main.28a46d68.js.map": "/cs1300-development/static/js/main.28a46d68.js.map"
+    "main.f8fea764.css.map": "/cs1300-development/static/css/main.f8fea764.css.map",
+    "main.12a766ae.js.map": "/cs1300-development/static/js/main.12a766ae.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.28a46d68.js"
+    "static/css/main.f8fea764.css",
+    "static/js/main.12a766ae.js"
   ]
 }
