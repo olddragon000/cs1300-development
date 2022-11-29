@@ -5,7 +5,7 @@ import {
     ConfigProvider,
     Divider,
     Row,
-    Select,
+    Select, Slider,
     Space,
     Typography
 } from "antd";
@@ -17,6 +17,7 @@ import {useState} from "react";
 import Checkbox from "antd/es/checkbox/Checkbox";
 
 function App() {
+    const [calRange, setCalRange] = useState(1000);
 
     const [showBread, setShowBread] = useState(true);
     const [showPastry, setShowPastry] = useState(true);
@@ -26,6 +27,14 @@ function App() {
     const [numItemsInCart, setNumItemsInCart] = useState({})
     const [totalPrice, setTotalPrice] = useState(0)
 
+    const myCaloriesFilterFunction = (item) => {
+        if(item.calories <= calRange){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 
     const myFilterFunction = (item) => {
         if ((showBread && item.type === "bread") || (showPastry && item.type === "pastry") || (showCake && item.type === "cake")) {
@@ -34,7 +43,7 @@ function App() {
             return false;
         }
     }
-    const filteredData = bakeryData.filter(myFilterFunction)
+    const filteredData = bakeryData.filter(myFilterFunction).filter(myCaloriesFilterFunction)
     const sortedData = filteredData.sort((a, b) => {
             if (sortBy === "price") {
                 return a.price - b.price;
@@ -78,6 +87,11 @@ function App() {
         }
 
     }
+
+    const marks = {
+        300: '300Cal',
+        1000: '1000Cal'
+    };
 
     return (
         <div className="App">
@@ -133,8 +147,9 @@ function App() {
 
                                 <Space direction="vertical">
                                     <Typography>
-                                        Filters
+                                        Types
                                     </Typography>
+
                                     <Checkbox checked={showBread}
                                               onChange={(e) => {
                                                   setShowBread(!showBread)
@@ -147,6 +162,18 @@ function App() {
                                               onChange={(e) => {
                                                   setShowCake(!showCake)
                                               }}>Cakes</Checkbox>
+                                    <Divider/>
+                                    <Typography>
+                                        Calories
+                                    </Typography>
+                                    <Slider
+                                        marks = {marks}
+                                        min={300}
+                                        max={1000}
+                                        defaultValue={1000}
+                                        step={100}
+                                        onAfterChange={(value) => setCalRange(value)}/>
+
                                 </Space>
                                 <Divider/>
                                 <Space
